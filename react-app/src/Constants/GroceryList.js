@@ -1,4 +1,3 @@
-import React from "react";
 const GroceryList = [
   { name: "Strawberry", quantity: 0 },
   { name: "Blueberry", quantity: 0 },

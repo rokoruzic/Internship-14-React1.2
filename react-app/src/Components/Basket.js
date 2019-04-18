@@ -1,18 +1,19 @@
 import React from "react";
-class Basket extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isStriked: false
-    };
-  }
-  render() {
-    return (
-      <div onClick={this.props.handleStrikeGrocery}>
-        {this.props.name} <span >{this.props.quantity}</span>  {this.props.isStriked}{" "}
-        <button className={this.props.buttonClassName} onClick={this.props.handleRemoveGrocery}>-</button>
-      </div>
-    );
-  }
+function Basket(props) {
+  return (
+    <div className="item" onClick={props.handleStrikeGrocery}>
+      {props.name}{" "}
+      <span className={props.quantityClassName}>{props.quantity}</span>{" "}
+      {props.isStriked}{" "}
+      <button
+        id="item__basket"
+        className={props.buttonClassName}
+        onClick={props.handleRemoveGrocery}
+      >
+        -
+      </button>
+    </div>
+  );
 }
+
 export default Basket;
