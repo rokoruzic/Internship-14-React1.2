@@ -1,0 +1,9 @@
+.grocery__quantity__item{
+    display:none;
+}
+.button__basket__hide{
+    display:none;
+}
+.button__basket{
+    display:inline-block;
+}
